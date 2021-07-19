@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "path": "InGamePanels\\fs-base-ingamepanels-diagonalization-panel-indicators.spb",
+      "size": 829,
+      "date": 132711796378940174
+    },
+    {
+      "path": "html_ui\\InGamePanels\\diagonalization-panel-indicatorsPanel\\diagonalization-panel-indicatorsPanel.css",
+      "size": 1795,
+      "date": 132711796037297950
+    },
+    {
+      "path": "html_ui\\InGamePanels\\diagonalization-panel-indicatorsPanel\\diagonalization-panel-indicatorsPanel.html",
+      "size": 2049,
+      "date": 132711796037388289
+    },
+    {
+      "path": "html_ui\\InGamePanels\\diagonalization-panel-indicatorsPanel\\main.js",
+      "size": 1334,
+      "date": 132711796037398232
+    },
+    {
+      "path": "html_ui\\Textures\\Menu\\toolbar\\ICON_TOOLBAR_DIAGONALIZATION-PANEL-INDICATORS.svg",
+      "size": 3601,
+      "date": 132711796037418284
+    }
+  ]
+}
