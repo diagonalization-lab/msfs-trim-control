@@ -1,5 +1,7 @@
 # Trim Adjustment for MSFS
 
+![](./screenshot.png)
+
 It can be hard to  adjust elevator trim with a keyboard or joystick button in
 MSFS. When you hold a key or button down, the trim first adjusts very slowly,
 and then far too quickly to be controllable (just like holding a key down while
