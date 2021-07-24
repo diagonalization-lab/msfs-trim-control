@@ -11,7 +11,6 @@ function getElevatorTrimPosition() {
     return SimVar.GetSimVarValue("ELEVATOR TRIM POSITION", "degrees");
 }
 
-
 function setElevatorTrimPosition(newPosition, forceSet) {
     lastElevatorTrimPosition = newPosition;
     // Produces a promise that we ignore.
@@ -41,11 +40,19 @@ function mainLoop() {
     }
 }
 
+function onElevatorTrimUpdateRate(evt) {
+    maxElevatorTrimDelta = evt.target.value;
+}
+
 class IngamePanelDiagonalizationPanelIndicatorsPanel extends HTMLElement {
     constructor() {
         super();
     }
     connectedCallback() {
+
+        document.getElementById("ElevatorTrimRate")
+            .addEventListener("update", onElevatorTrimUpdateRate);
+
         lastElevatorTrimPosition = getElevatorTrimPosition();
         setInterval(mainLoop, pollIntervalMs);
     }

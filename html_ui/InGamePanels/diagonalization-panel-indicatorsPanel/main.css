@@ -8,7 +8,7 @@ ingame-ui#diagonalization-panel-indicatorsPanel {
   width: 100% !important;
   /*border: 2px solid blue !important;*/
 }
-ingame-ui#diagonalization-panel-indicatorsPanel #diagonalization-panel-indicatorsPanelWrap {
+ingame-ui#diagonalization-panel-indicatorsPanel #wrap {
   display: flex;
   flex-direction: column;
   width: 100% !important;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/SCSS/common.css" />
-    <link rel="stylesheet" href="diagonalization-panel-indicatorsPanel.css" />
+    <link rel="stylesheet" href="main.css" />
     <script type="text/javascript" src="/JS/coherent.js"></script>
     <script type="text/javascript" src="/JS/common.js"></script>
     <script type="text/javascript" src="/JS/dataStorage.js"></script>
@@ -12,6 +12,7 @@
     <script type="text/javascript" src="/Pages/VCockpit/Instruments/Shared/BaseInstrument.js"></script>
     <script type="text/javascript" src="/JS/simvar.js"></script>
     <script type="text/javascript" src="/JS/inputs.js"></script>
+    <link rel="import" href="/templates/InputableRange/InputableRange.html" />
     <link rel="import" href="/templates/NewPushButton/NewPushButton.html" />
     <link rel="import" href="/templates/ToggleButton/toggleButton.html" />
     <link rel="import" href="/templates/tabMenu/tabMenu.html" />
@@ -29,12 +30,15 @@
                    title=""
                    class="ingameUiFrame panelInvisible"
                    content-fit="true"
-                   min-width="160"
+                   min-width="200"
                    min-height="90">
-            <div>To set elevator trim to zero, hold the input bound to 
-            "Toggle Water Rudder".
+            <div id="wrap">
+                <div>Hold "Toggle Water Rudder" key to zero trim.</div>
+                <inputable-range id="ElevatorTrimRate" min="0.0" max="0.10"
+                step="0.01" label="Elevator trim update rate" inline="true">
+                </inputable-range>
+                <div>Current elevator trim: <span id="elevatorTrim"></span> degrees</div>
             </div>
-            <div>Elevator trim: <span id="elevatorTrim"></span> degrees</div>
         </ingame-ui>
     </ingamepanel-diagonalization-panel-indicators>
 </body>
